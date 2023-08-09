@@ -1,0 +1,26 @@
+.header {
+    background-color: darkblue;
+    min-height: 30vh;
+    padding: 15px;
+}
+
+.images {
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.logo {
+    margin-left: 10%;
+    height: 20vh;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.title {
+    color: white;
+    text-align: center;
+}
