@@ -20,6 +20,10 @@ export class PensamentoService {
     return this.http.get<Pensamento[]>(this.api_url)
   }
 
+  get_pensamentos_by_conteudo(conteudo:string) {
+    return this.http.get<Pensamento[]>(`${this.api_url}?q=${conteudo}`)
+  }
+
   add(pensamento: Pensamento): Observable<Pensamento> {
     return this.http.post<Pensamento>(this.api_url, pensamento)
   }

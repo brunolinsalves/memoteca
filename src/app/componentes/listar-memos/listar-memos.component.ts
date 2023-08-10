@@ -11,12 +11,20 @@ export class ListarMemosComponent implements OnInit {
 
   listaPensamentos : Pensamento[] = [];
 
+  filtro : string = ''
+
   constructor(private service: PensamentoService) { }
 
   ngOnInit(): void {
     this.service.get_pensamentos().subscribe( (listaPensamentos) => {
       this.listaPensamentos = listaPensamentos
     } )
+  }
+
+  pesquisar(): void {
+    this.service.get_pensamentos_by_conteudo(this.filtro).subscribe( (listaPensamentos) => {
+      this.listaPensamentos = listaPensamentos
+    })
   }
 
 }

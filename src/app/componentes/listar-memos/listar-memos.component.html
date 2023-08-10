@@ -1,5 +1,9 @@
-<div class="d-flex justify-content-end p-4">
+<div class="d-flex p-3 justify-content-end">
     <a class="btn btn-lg btn-primary" routerLink="/pensamento/create">Adicionar pensamento</a>
+</div>
+
+<div class="form-group p-3">
+    <input type="text" (change)="pesquisar()" [(ngModel)]="filtro" class="form-control w-100" id="filtro" name="filtro" aria-describedby="filtroHelp" placeholder="Deseja pesquisar por pensamentos?">
 </div>
 
 <div class="container-fluid d-flex row" *ngIf="listaPensamentos.length > 0, else semPensamentos">
