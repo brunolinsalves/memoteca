@@ -5,16 +5,55 @@
         <div class="card-body">
             <div class="m-3">
                 <label for="conteudo" class="form-label">Digite o pensamento</label>
-                <textarea class="form-control"  id="memo" formControlName="conteudo" rows="3" ></textarea>
+                <textarea class="form-control" id="memo" formControlName="conteudo" rows="3"></textarea>
             </div>
             <div class="m-3">
                 <label for="autoria" class="form-label">Autoria</label>
-                <input type="text" class="form-control" id="autoria" formControlName="autoria" placeholder="Digite o autor ou fonte" >
+                <input type="text" class="form-control" id="autoria" formControlName="autoria"
+                    placeholder="Digite o autor ou fonte">
             </div>
         </div>
-      </div>
+    </div>
+
+    <h4 class="d-flex justify-content-center m-3">Modelos</h4>
+
+    <div class="container-fluid row mb-4">
+
+        <div class="col-4">
+            <div class="form-check d-flex justify-content-center">
+                <input class="form-check-input" type="radio" formControlName="modelo" id="modelo1" value="modelo1">
+                <label class="form-check-label px-1" for="modelo1">
+                    Modelo 1
+                </label>
+            </div>
+            <app-pensamento></app-pensamento>
+        </div>
+
+        <div class="col-4">
+            <div class="form-check d-flex justify-content-center">
+                <input class="form-check-input" type="radio" formControlName="modelo" id="modelo2" value="modelo2">
+                <label class="form-check-label px-1" for="modelo2">
+                    Modelo 2
+                </label>
+            </div>
+            <app-pensamento></app-pensamento>
+        </div>
+
+        <div class="col-4">
+            <div class="form-check d-flex justify-content-center">
+                <input class="form-check-input" type="radio" formControlName="modelo" id="modelo3" value="modelo3">
+                <label class="form-check-label px-1" for="modelo3">
+                    Modelo 3
+                </label>
+            </div>
+            <app-pensamento></app-pensamento>
+        </div>
+
+    </div>
+
     <div class="botoes justify-content-center d-flex">
-        <a href="#" class="btn btn-lg btn-primary mx-3 mb-3 w-25" (click)="operacao_principal()">{{ default_action_title }}</a>
+        <a href="#" class="btn btn-lg btn-primary mx-3 mb-3 w-25" (click)="operacao_principal()">{{ default_action_title
+            }}</a>
         <a href="#" class="btn btn-lg btn-warning mx-3 mb-3 w-25" routerLink="/listarMemos">Cancelar</a>
     </div>
 </form>

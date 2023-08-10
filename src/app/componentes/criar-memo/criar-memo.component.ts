@@ -29,7 +29,8 @@ export class CriarMemoComponent implements OnInit {
     this.formulario = this.formBuilder.group({
       id: 0,
       conteudo: ['', [Validators.required]],
-      autoria: ['', [Validators.required]]
+      autoria: ['', [Validators.required]],
+      modelo: 'modelo1'
     })
 
     if ( this.router.url == '/pensamento/create' ) {
