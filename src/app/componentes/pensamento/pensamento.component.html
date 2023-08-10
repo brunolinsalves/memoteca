@@ -4,8 +4,18 @@
         <p>{{ pensamento.conteudo }} </p>
         <p><b>Autor:</b> {{ pensamento.autoria }}</p>
         <div class="d-flex flex-row justify-content-end">
-            <a href="/pensamento/update/{{ pensamento.id }}"><i class="bi-pencil-square trash_icon {{ pensamento.modelo }} mx-2"></i></a>
-            <a routerLink="/pensamento/delete/{{ pensamento.id }}"><i class="bi-trash3 trash_icon {{ pensamento.modelo }}"></i></a>
+            <a *ngIf="pensamento.id != 0, else no_edit" href="/pensamento/update/{{ pensamento.id }}"><i
+                    class="bi-pencil-square trash_icon {{ pensamento.modelo }} mx-2"></i></a>
+            <a *ngIf="pensamento.id != 0, else no_delete" routerLink="/pensamento/delete/{{ pensamento.id }}"><i
+                    class="bi-trash3 trash_icon {{ pensamento.modelo }}"></i></a>
         </div>
     </div>
 </div>
+
+<ng-template #no_edit>
+    <i class="bi-pencil-square trash_icon {{ pensamento.modelo }} mx-2"></i>
+</ng-template>
+
+<ng-template #no_delete>
+    <i class="bi-trash3 trash_icon {{ pensamento.modelo }}"></i>
+</ng-template>

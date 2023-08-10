@@ -8,9 +8,7 @@
 
 <div class="container-fluid d-flex row" *ngIf="listaPensamentos.length > 0, else semPensamentos">
     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4" *ngFor="let pensamento of listaPensamentos">
-
         <app-pensamento [pensamento]="pensamento"></app-pensamento>
-
     </div>
 </div>
 

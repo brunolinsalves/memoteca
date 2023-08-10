@@ -17,6 +17,27 @@ export class CriarMemoComponent implements OnInit {
 
   formulario! : FormGroup;
 
+  template_modelo1 = {
+    id: 0,
+    conteudo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus id arcu ac accumsan. ',
+    autoria: 'Lorem ipsum',
+    modelo: 'modelo1'
+  }
+
+  template_modelo2 = {
+    id: 0,
+    conteudo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus id arcu ac accumsan. ',
+    autoria: 'Lorem ipsum',
+    modelo: 'modelo2'
+  }
+
+  template_modelo3 = {
+    id: 0,
+    conteudo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus id arcu ac accumsan. ',
+    autoria: 'Lorem ipsum',
+    modelo: 'modelo3'
+  }
+
   constructor(
     private service: PensamentoService,
     private router: Router,
@@ -43,7 +64,8 @@ export class CriarMemoComponent implements OnInit {
         this.formulario.patchValue({
           id: pensamento.id,
           conteudo: pensamento.conteudo,
-          autoria: pensamento.autoria
+          autoria: pensamento.autoria,
+          modelo: pensamento.modelo
         })
       })
 
@@ -75,12 +97,14 @@ export class CriarMemoComponent implements OnInit {
         })
       }
     }
-
   }
 
   disable_form_input(): void {
     (document.getElementById('memo') as any).disabled = true;
     (document.getElementById('autoria') as any).disabled = true;
+    (document.getElementById('modelo1') as any).disabled = true;
+    (document.getElementById('modelo2') as any).disabled = true;
+    (document.getElementById('modelo3') as any).disabled = true;
   }
 
 }

@@ -28,7 +28,7 @@
       "id": 5,
       "conteudo": "Os heróis são famosos mas os santos são anônimos.",
       "autoria": "Russell Shedd",
-      "modelo": "modelo1"
+      "modelo": "modelo3"
     },
     {
       "id": 6,
@@ -37,10 +37,10 @@
       "modelo": "modelo1"
     },
     {
+      "id": 7,
       "conteudo": "⁠Imbatível é aquele que reconhece o seu valor interno e não desiste durante o processo.",
       "autoria": "Karlonan Guimarães",
-      "id": 7,
-      "modelo": "modelo1"
+      "modelo": "modelo2"
     }
   ]
 }
