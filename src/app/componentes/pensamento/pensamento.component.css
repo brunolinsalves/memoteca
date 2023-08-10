@@ -4,10 +4,39 @@
 
 .quote_icon {
     font-size: 4rem; 
-    color: darkblue;
+    
+    
 }
 
 .trash_icon {
     font-size: 2rem; 
+    
+    
+}
+
+.card_modelo1 {
+    border-bottom: 8px solid darkblue;
+    border-right: 8px solid darkblue;
+}
+
+.modelo1 {
     color: darkblue;
+}
+
+.card_modelo2 {
+    border-bottom: 8px solid darkgreen;
+    border-right: 8px solid darkgreen;
+}
+
+.modelo2 {
+    color: darkgreen;
+}
+
+.card_modelo3 {
+    border-bottom: 8px solid darkmagenta;
+    border-right: 8px solid darkmagenta;
+}
+
+.modelo3 {
+    color: darkmagenta;
 }

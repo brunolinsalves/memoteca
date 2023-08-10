@@ -1,11 +1,11 @@
-<div class="card pensamento">
+<div class="card card_{{ pensamento.modelo }}">
     <div class="card-body d-flex flex-column">
-        <i class="bi-quote quote_icon"></i>
+        <i class="bi-quote quote_icon {{ pensamento.modelo }}"></i>
         <p>{{ pensamento.conteudo }} </p>
         <p><b>Autor:</b> {{ pensamento.autoria }}</p>
         <div class="d-flex flex-row justify-content-end">
-            <a href="/pensamento/update/{{ pensamento.id }}"><i class="bi-pencil-square trash_icon mx-2"></i></a>
-            <a routerLink="/pensamento/delete/{{ pensamento.id }}"><i class="bi-trash3 trash_icon"></i></a>
+            <a href="/pensamento/update/{{ pensamento.id }}"><i class="bi-pencil-square trash_icon {{ pensamento.modelo }} mx-2"></i></a>
+            <a routerLink="/pensamento/delete/{{ pensamento.id }}"><i class="bi-trash3 trash_icon {{ pensamento.modelo }}"></i></a>
         </div>
     </div>
 </div>

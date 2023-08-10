@@ -11,7 +11,8 @@ export class PensamentoComponent implements OnInit {
   @Input() pensamento : Pensamento = {
     id: 1,
     conteudo: 'Conteúdo do pensamento',
-    autoria: 'Dev'
+    autoria: 'Dev',
+    modelo: 'modelo1'
   }
 
   constructor() { }
