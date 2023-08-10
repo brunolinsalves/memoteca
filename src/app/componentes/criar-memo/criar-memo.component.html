@@ -1,0 +1,20 @@
+<h2 class="d-flex justify-content-center p-3">Novo Memo</h2>
+
+<form class="container">
+    <div class="card m-3">
+        <div class="card-body">
+            <div class="m-3">
+                <label for="memo" class="form-label">Digite o pensamento</label>
+                <textarea class="form-control" id="memo" name="memo" rows="3" [(ngModel)]="pensamento.conteudo"></textarea>
+            </div>
+            <div class="m-3">
+                <label for="autoria" class="form-label">Autoria</label>
+                <input type="text" class="form-control" id="autoria" name="autoria" placeholder="Digite o autor ou fonte" [(ngModel)]="pensamento.autoria">
+            </div>
+        </div>
+      </div>
+    <div class="botoes justify-content-center d-flex">
+        <a href="#" class="btn btn-lg btn-primary mx-3 mb-3 w-25" (click)="criar_memo()">Criar</a>
+        <a href="#" class="btn btn-lg btn-warning mx-3 mb-3 w-25" routerLink="/listarMemos">Cancelar</a>
+    </div>
+</form>
