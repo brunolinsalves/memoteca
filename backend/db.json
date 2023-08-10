@@ -1,9 +1,39 @@
 {
-    "pensamentos": [
-        {
-            "id": 1,
-            "conteudo": "",
-            "autoria": "Mestre Pitón"
-        }
-    ]
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Onde quer que a virtude se encontre em grau eminente, é perseguida; poucos ou nenhum dos famosos varões do passado deixou de ser caluniado pela malícia.",
+      "autoria": "Miguel de Cervantes"
+    },
+    {
+      "id": 2,
+      "conteudo": "A tragédia quando somos famosos é que se tem de devotar tanto tempo a ser-se famoso.",
+      "autoria": "Pablo Picasso"
+    },
+    {
+      "id": 3,
+      "conteudo": "Tenho fotos dos meus ídolos na parede, mas eles não são famosos, só estão do meu lado quando eu preciso.",
+      "autoria": "Daniel Ernani"
+    },
+    {
+      "id": 4,
+      "conteudo": "Editar fotos, por que não? Isso não é privilégio só dos famosos. As fotografias eternizam. E já que é para eternizar, que nos eternizemos como bem desejarmos.",
+      "autoria": "Georgeana Alves"
+    },
+    {
+      "id": 5,
+      "conteudo": "Os heróis são famosos mas os santos são anônimos.",
+      "autoria": "Russell Shedd"
+    },
+    {
+      "id": 6,
+      "conteudo": "Você não precisa se tornar famoso. Você só precisa fazer com que seus pais tenham orgulho de você.",
+      "autoria": "Meryl Streep"
+    },
+    {
+      "conteudo": "⁠Imbatível é aquele que reconhece o seu valor interno e não desiste durante o processo.",
+      "autoria": "Karlonan Guimarães",
+      "id": 7
+    }
+  ]
 }

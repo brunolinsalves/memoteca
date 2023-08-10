@@ -10,12 +10,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'criarMemo',
+    path: 'listarMemos',
+    component: ListarMemosComponent
+  },
+  {
+    path: 'pensamento/create',
     component: CriarMemoComponent
   },
   {
-    path: 'listarMemos',
-    component: ListarMemosComponent
+    path: 'pensamento/update/:id',
+    component: CriarMemoComponent
+  },
+  {
+    path: 'pensamento/delete/:id',
+    component: CriarMemoComponent
   }
 ];
 

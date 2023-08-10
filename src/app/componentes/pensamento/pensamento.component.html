@@ -4,8 +4,8 @@
         <p>{{ pensamento.conteudo }} </p>
         <p><b>Autor:</b> {{ pensamento.autoria }}</p>
         <div class="d-flex flex-row justify-content-end">
-            <i class="bi-pencil-square trash_icon mx-2"></i>
-            <i class="bi-trash3 trash_icon"></i>
+            <a href="/pensamento/update/{{ pensamento.id }}"><i class="bi-pencil-square trash_icon mx-2"></i></a>
+            <a routerLink="/pensamento/delete/{{ pensamento.id }}"><i class="bi-trash3 trash_icon"></i></a>
         </div>
     </div>
 </div>

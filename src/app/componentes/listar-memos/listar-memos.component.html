@@ -1,10 +1,10 @@
-<div class="d-flex justify-content-center p-4">
-    <button class="btn btn-lg btn-primary" routerLink="/criarMemo">Adicionar novo memo</button>
+<div class="d-flex justify-content-end p-4">
+    <a class="btn btn-lg btn-primary" routerLink="/pensamento/create">Adicionar pensamento</a>
 </div>
 
 <div class="container-fluid d-flex row" *ngIf="listaPensamentos.length > 0, else semPensamentos">
-    <div class="col-3 mb-4" *ngFor="let pensamento of listaPensamentos">
-        
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4" *ngFor="let pensamento of listaPensamentos">
+
         <app-pensamento [pensamento]="pensamento"></app-pensamento>
 
     </div>
